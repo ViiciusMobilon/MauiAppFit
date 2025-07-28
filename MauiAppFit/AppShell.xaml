@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Shell
+    x:Class="MauiAppFit.AppShell"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:local="clr-namespace:MauiAppFit"
+    Shell.FlyoutBehavior="Flyout"
+    xmlms:Views="clr-namespace:MauiAppFit.Views"
+    Title="MauiAppFit">
+
+    <Tab Title="Nova Atividade" incon="exercicios.png" Route="CadastroAtividade"
+        
+        <ShellContent>
+        <View: CadastroAtividade Title="Cadastro de Atividade"/>
+        </ShellContent>
+    </Tab>
+    <Tab Title="Minha Atividades " icon="Meus_execicios.png" Route=MinhaAtividade">
+         <ShellContent>
+             <ViewState: ListaAtividade Title="Minha de Atividades"/>
+             </ShellContent>
+
+</Shell>
